@@ -1,0 +1,35 @@
+let line1 = "#  #  #  #"
+let line2 = "  #  #  #  #"
+let responZe = prompt("How many rows shall I print?")
+let evenRows = responZe / 2 
+let otherNum = responZe - 1
+let finNum = otherNum / 2
+
+
+function myFun1 () {
+  console.log(line1)
+}
+
+function myFun2 () {
+  console.log(line1)
+  console.log(line2)
+}
+
+function myFun3 (){
+  console.log(line2)
+}
+
+if (responZe === 1){
+  myFun1();
+}
+
+if (responZe % 2 === 0){
+  for (let x = 1 ; x <= evenRows ; x++)
+  myFun2();
+
+} else {
+    for (let k = 1 ; k <= finNum ; k++)
+    myFun2();
+    //for (g = 0 ; g <= 1 ; g++)
+    myFun1();
+}
